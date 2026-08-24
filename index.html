@@ -183,6 +183,11 @@
     background:radial-gradient(circle, var(--accent-glow), transparent 66%); filter:blur(26px); }
   .hero-grid{ position:relative; z-index:2; display:grid; grid-template-columns:1.02fr 0.98fr; gap:48px; align-items:center; }
 
+  .hero-avatar{
+    width:88px; height:88px; border-radius:50%; object-fit:cover;
+    border:2px solid var(--line-strong); margin-bottom:20px;
+    box-shadow:0 8px 24px -10px var(--accent-glow);
+  }
   .hero-badge{
     display:inline-flex; align-items:center; gap:9px; margin-bottom:26px;
     font-family:var(--font-mono); font-size:0.74rem; letter-spacing:0.04em;
@@ -572,6 +577,7 @@
     <div class="hero-glow" aria-hidden="true"></div>
     <div class="wrap hero-grid">
       <div class="hero-content">
+        <img src="profile.png" alt="Tiya Agarwal" class="hero-avatar reveal-load" style="--d:0s" width="88" height="88" />
         <div class="hero-badge reveal-load" style="--d:0.05s"><span class="dot"></span>OPEN TO SWE &amp; AI/ML ROLES · 2027</div>
         <h1 class="reveal-load" style="--d:0.12s">Building <span class="grad">intelligent systems</span> across AI, software &amp; the web.</h1>
         <p class="hero-sub reveal-load" style="--d:0.2s">Tiya Agarwal — CS undergraduate at VIT Vellore.</p>
