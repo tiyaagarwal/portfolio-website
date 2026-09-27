@@ -19,10 +19,11 @@ framework. Everything lives in `index.html`.
 
 Deploys automatically to [Vercel](https://vercel.com/) on push to `main`.
 
-## Running locally
+## Local development
 
-No build or install step is required. Serve the directory with any static
-file server, e.g.:
+The site above is what's live — this is only for previewing edits before
+pushing. No build or install step is required. Serve the directory with any
+static file server, e.g.:
 
 ```sh
 python3 -m http.server 8000
