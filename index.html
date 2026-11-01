@@ -1142,10 +1142,10 @@
     </svg>`,
 
     anemia: `<svg class="pv" viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <text class="anno" x="16" y="20">MODEL BENCHMARK · 7 CLASSIFIERS</text>
+      <text class="anno" x="16" y="20">MODEL BENCHMARK · 5 CLASSIFIERS</text>
       <g transform="translate(16,32)">
-        ${['LogReg','Tree','Forest','NBayes','SVM','GBoost','Lasso'].map((m,i)=>{
-          const scores=[78,74,91,71,83,88,80];const w=scores[i]*1.9;const best=i===2;
+        ${['GBoost','HistGB','Forest','LogReg','SVM'].map((m,i)=>{
+          const scores=[92.9,91.5,87.2,75.5,71.9];const w=scores[i]*1.9;const best=i===0;
           return `<g transform="translate(0,${i*15})">
             <text class="anno" x="0" y="10" font-size="7">${m}</text>
             <rect x="46" y="2" width="220" height="9" rx="4.5" fill="var(--bg-elev-2)"/>
@@ -1154,7 +1154,7 @@
           </g>`;
         }).join('')}
       </g>
-      <text class="anno" x="16" y="150">RANDOM FOREST SELECTED · FLASK DEPLOY</text>
+      <text class="anno" x="16" y="150">GRADIENT BOOSTING SELECTED · FLASK DEPLOY</text>
     </svg>`,
 
     krt: `<svg class="pv" viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
